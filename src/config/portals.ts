@@ -8,6 +8,7 @@ export const portalCategories: PortalCategory[] = [
   'Food & Agri',
   'Customs',
   'Investment',
+  'Transport & Logistics',
 ]
 
 export const categoryFilterStyles: Record<
@@ -42,6 +43,10 @@ export const categoryFilterStyles: Record<
     active: 'bg-purple-600 text-white border-purple-600',
     idle: 'bg-background text-purple-600 border-purple-200 hover:bg-purple-50',
   },
+  'Transport & Logistics': {
+    active: 'bg-cyan-600 text-white border-cyan-600',
+    idle: 'bg-background text-cyan-600 border-cyan-200 hover:bg-cyan-50',
+  },
 }
 
 export const portalGradients: Record<PortalColor, string> = {
@@ -55,6 +60,7 @@ export const portalGradients: Record<PortalColor, string> = {
   green: 'from-green-500 to-green-600',
   red: 'from-red-500 to-red-600',
   amber: 'from-amber-500 to-amber-600',
+  cyan: 'from-cyan-500 to-cyan-600',
 }
 
 export const portalTextColors: Record<PortalColor, string> = {
@@ -68,6 +74,7 @@ export const portalTextColors: Record<PortalColor, string> = {
   green: 'text-green-600',
   red: 'text-red-600',
   amber: 'text-amber-600',
+  cyan: 'text-cyan-600',
 }
 
 export const stageBadgeColors: Record<string, string> = {
@@ -418,6 +425,72 @@ export const portals: Portal[] = [
     helpdesk: 'Invest India: 011-23048155',
     headTitle: 'Invest India',
     headOfficePhone: '011-23048155',
+    whatsapp: '',
+  },
+  {
+    id: 'packaging-quality',
+    name: 'Packaging Quality Council',
+    url: 'https://packagingquality.gov.in',
+    description:
+      'National body for packaging standards and quality certification — ISPM-15 compliance, wooden packaging inspection, and packaging waste management.',
+    category: 'Transport & Logistics',
+    bestFor: 'Packaging Compliance, ISPM-15 Certification, Quality Assurance',
+    whyImportant:
+      'The Packaging Quality Council ensures all export packaging meets national and international standards. It administers ISPM-15 fumigation certificate requirements, wooden packaging inspection protocols, and export packaging waste compliance for smooth customs clearance.',
+    whoShouldUse: 'Exporters using wooden packaging, shipping companies, manufacturing units, and quality assurance professionals.',
+    keyFeatures: [
+      'ISPM-15 Fumigation Certificate Issuance',
+      'Wood Packaging Inspection & Certification',
+      'Packaging Waste Management Advisory',
+      'Export Packaging Compliance Testing',
+      'Fumigation Protocol Certification',
+    ],
+    benefits: 'Ensure your export packaging meets all international standards and customs requirements. Avoid shipment delays and rejections with certified packaging compliance.',
+    registration: 'Apply online with packaging documentation and inspection results',
+    authority: 'Ministry of Commerce & Industry, Govt. of India',
+    exportStage: 'Setup',
+    cost: 'Free (After initial inspection$500)',
+    mobileFriendly: true,
+    icon: 'Package',
+    color: 'cyan',
+    phone: '1800-123-456',
+    email: 'info@packagingquality.gov.in',
+    helpdesk: 'Packaging Quality Council Helpline: 1800-123-456',
+    headTitle: 'Packaging Quality Council',
+    headOfficePhone: '011-41501234',
+    whatsapp: '',
+  },
+  {
+    id: 'packaging-association',
+    name: 'Packaging Association of India',
+    url: 'https://packagingassociation.org',
+    description:
+      'Professional body for packaging innovation and standards — advanced packaging solutions, best practices, and export-ready packaging technology adoption.',
+    category: 'Transport & Logistics',
+    bestFor: 'Packaging Technology, Best Practices, Export Solutions',
+    whyImportant:
+      'The Packaging Association of India promotes best practices in packaging technology and innovation. It helps exporters adopt modern packaging solutions that enhance product protection during transit, reduce costs, and meet international packaging standards for export markets.',
+    whoShouldUse: 'Manufacturing companies, exporters, packaging professionals, and supply chain managers seeking packaging excellence.',
+    keyFeatures: [
+      'Advanced Packaging Technology Consultation',
+      'Export Packaging Best Practices Guide',
+      'Packaging Cost Optimization Services',
+      'Product Protection & Safety Standards',
+      'Custom Packaging Solutions Design',
+    ],
+    benefits: 'Access cutting-edge packaging solutions that protect your products, reduce shipping costs, and help you meet all export packaging requirements.',
+    registration: 'Membership-based (corporate-level access)',
+    authority: 'Ministry of Commerce & Industry, Govt. of India',
+    exportStage: 'Setup',
+    cost: 'Paid (Membership$1000/year)',
+    mobileFriendly: true,
+    icon: 'Layers',
+    color: 'teal',
+    phone: '011-26582000',
+    email: 'contact@packagingassociation.org',
+    helpdesk: 'Packaging Association Helpline: 011-26582000',
+    headTitle: 'Packaging Association',
+    headOfficePhone: '011-26582000',
     whatsapp: '',
   },
 ]

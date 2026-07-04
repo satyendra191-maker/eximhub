@@ -1,6 +1,6 @@
 # Export Intelligence Hub
 
-Navigate India's export ecosystem with AI-powered guidance. Access 10+ government portals, 25+ document templates, and export schemes in one place.
+Navigate India's export ecosystem with AI-powered guidance. Access 12+ government portals & service providers, 25+ document templates, and export schemes in one place.
 
 ## Technology Stack
 
@@ -90,7 +90,7 @@ src/
 
 ## Features
 
-- **10 Government Portals** - Search, filter, and explore with detailed information
+- **12 Government Portals & Service Providers** - Search, filter, and explore with detailed information
 - **Portal Comparison Matrix** - Side-by-side comparison of all portals
 - **7-Step Export Journey** - Step-by-step roadmap with portal connections
 - **15-Item Readiness Checklist** - Progress tracking with localStorage persistence

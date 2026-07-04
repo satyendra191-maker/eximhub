@@ -31,6 +31,8 @@ const iconMap: Record<string, string> = {
   MapPin: '📍',
   PieChart: '📈',
   TrendingUp: '📈',
+  Package: '📦',
+  Layers: '📦',
 }
 
 export function PortalSection() {

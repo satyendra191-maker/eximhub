@@ -34,7 +34,7 @@ export const journeySteps: JourneyStep[] = [
     title: 'Customs & Shipping',
     description:
       'File shipping bills and clear customs electronically.',
-    portals: ['ICEGATE'],
+    portals: ['ICEGATE', 'Fumigation Services', 'Packaging Solutions'],
   },
   {
     step: 6,
@@ -48,6 +48,6 @@ export const journeySteps: JourneyStep[] = [
     title: 'Export Successfully!',
     description:
       'Ship your goods and claim export incentives.',
-    portals: [],
+    portals: ['Fumigation Services', 'Packaging Solutions'],
   },
 ]

@@ -32,6 +32,7 @@ export type PortalCategory =
   | 'Food & Agri'
   | 'Customs'
   | 'Investment'
+  | 'Transport & Logistics'
 
 export type PortalColor =
   | 'blue'
@@ -44,6 +45,7 @@ export type PortalColor =
   | 'green'
   | 'red'
   | 'amber'
+  | 'cyan'
 
 export interface JourneyStep {
   step: number
