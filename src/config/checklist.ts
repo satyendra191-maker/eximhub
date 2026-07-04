@@ -1,0 +1,17 @@
+export const checklistItems: string[] = [
+  'IEC Registration',
+  'GST Registration',
+  'PAN Card',
+  'Bank Account (AD Category)',
+  'RCMC Certificate',
+  'APEDA Registration (if food)',
+  'Product Standards Compliance',
+  'Packaging Norms',
+  'HS Code Identification',
+  'Buyer Identification',
+  'Shipping Line Selection',
+  'CHA Appointment',
+  'Export Insurance',
+  'Documentation Preparation',
+  'Payment Terms Agreement',
+]
