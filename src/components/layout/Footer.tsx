@@ -83,20 +83,20 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
                 <span className="block font-medium text-foreground">Address</span>
-                {siteConfig.address}
+                {siteConfig.footer.address}
               </li>
               <li>
                 <span className="block font-medium text-foreground">Email</span>
                 <a
-                  href={`mailto:${siteConfig.email}`}
+                  href={`mailto:${siteConfig.footer.email}`}
                   className="hover:text-foreground"
                 >
-                  {siteConfig.email}
+                  {siteConfig.footer.email || 'Verify on official website'}
                 </a>
               </li>
               <li>
                 <span className="block font-medium text-foreground">Phone</span>
-                {siteConfig.phone}
+                {siteConfig.footer.phone || 'Verify on official website'}
               </li>
               <li>
                 <a
@@ -119,15 +119,8 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p className="mb-2">
-            {siteConfig.footer.madeIn}
-          </p>
-          <p className="mb-2">
-            &copy; {new Date().getFullYear()} {siteConfig.name} | Last
-            Updated: {siteConfig.lastUpdated} | Version {siteConfig.version}
-          </p>
-          <p className="max-w-3xl mx-auto text-xs">
-            {siteConfig.footer.disclaimer}
+          <p>
+            &copy; {new Date().getFullYear()} {siteConfig.name} | Last Verified: {siteConfig.lastVerified}
           </p>
         </div>
       </div>

@@ -1,47 +1,45 @@
-import type { NavLink } from '@/types'
+import type { NavLink, CompanyInfo } from '@/types'
 
 export const siteConfig = {
-  name: 'Export Intelligence Hub',
-  shortName: 'Export Intelligence',
-  tagline:
-    'Your centralized gateway to navigate India\'s export ecosystem, find schemes, and connect with global markets.',
-  description:
-    'One intelligent hub for government portals, export documents, trade data, and compliance — everything your export business needs, all in one place.',
+  name: 'EximHub',
+  shortName: 'EximHub',
+  tagline: 'India Export Ecosystem Gateway',
+  description: 'Access verified government portals, EPCs, trade statistics, ODOP resources, banks, customs services, shipping lines, logistics providers, transporters and packaging partners from one mobile-friendly export gateway.',
   url: 'https://exporsthub.vercel.app',
-  ogImage: '/opengraph.jpg',
-  version: '2.0',
-  lastUpdated: 'June 2025',
-  email: 'support@exporthub.example.com',
-  phone: '1800-111-XXXX (Toll Free)',
-  address: 'New Delhi, India',
+  lastVerified: '2026-07-05',
   company: {
-    name: 'Savita Global Interprises',
-    addr1: 'Parth A Apartment, 3/11, Patel Colony',
-    addr2: 'Jamnagar - 361008, Gujarat, India',
-    phone: '+91-8299770889',
-    wa: '8299770889',
-    email: 'satyendra191@gmail.com',
+    name: 'EximHub',
+    addr1: 'Export Intelligence Hub',
+    addr2: 'India',
+    phone: '',
+    wa: '',
+    email: '',
     gstin: '',
     iec: '',
     pan: '',
-  },
-  footer: {
-    disclaimer:
-      'Disclaimer: This platform is an independent aggregator. All linked portals are official Government of India websites.',
-    madeIn: 'Made with ❤️ for Indian Exporters',
-  },
+  } satisfies CompanyInfo,
   social: {
     twitter: '#',
     linkedin: '#',
     facebook: '#',
     youtube: '#',
   },
+  footer: {
+    email: '',
+    phone: '',
+    address: 'India',
+  },
 }
 
 export const navLinks: NavLink[] = [
-  { label: 'Home', href: '/' },
-  { label: 'Portals', href: '#tools' },
+  { label: 'Quick Access', href: '#tools' },
+  { label: 'Portals', href: '#portals' },
+  { label: 'EPCs', href: '#epc' },
+  { label: 'Trade Data', href: '#trade-intelligence' },
+  { label: 'Banking', href: '#banking' },
+  { label: 'Shipping', href: '#shipping' },
   { label: 'Journey', href: '#journey' },
   { label: 'Downloads', href: '#downloads' },
   { label: 'Resources', href: '#resources' },
+  { label: 'FAQ', href: '#faq' },
 ]

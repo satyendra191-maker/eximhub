@@ -1,0 +1,909 @@
+{
+  "last_verified": "2026-07-05",
+  "source_notes": "Information verified from official government/organizational websites. Phone numbers and emails sourced from official contact pages.",
+  "categories": {
+    "government_export_portals": [
+      {
+        "name": "Directorate General of Foreign Trade",
+        "acronym": "DGFT",
+        "purpose": "Formulation and implementation of Foreign Trade Policy; issuance of IEC, authorizations/scrips; export promotion",
+        "official_url": "https://dgft.gov.in",
+        "contact_page": "https://dgft.gov.in/CP?opt=about-dgft",
+        "head_office": "Vanijya Bhawan, 'A' Wing, 16 Akbar Road, New Delhi - 110011",
+        "phone": "1800-572-1550 / 1800-111-550 (Toll Free)",
+        "email": "dgftedi@nic.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Indian Customs Electronic Gateway",
+        "acronym": "ICEGATE",
+        "purpose": "Centralized e-filing portal for customs documents (BoE, SB, IGM, EGM), e-payment, scrip management",
+        "official_url": "https://www.icegate.gov.in",
+        "contact_page": "https://www.icegate.gov.in/contact-us",
+        "head_office": "Directorate General of Systems & Data Management (ICEGATE), 1st Floor, CR Building, IP Estate, New Delhi - 110095",
+        "phone": "1800-3010-1000 (24x7 Toll Free)",
+        "email": "icegatehelpdesk@icegate.gov.in",
+        "ministry": "CBIC, Ministry of Finance"
+      },
+      {
+        "name": "Indian Trade Portal",
+        "acronym": "ITP",
+        "purpose": "Single-point access for MFN/preferential tariffs, rules of origin, TBT measures, SPS notifications, export incentives",
+        "official_url": "https://indiantradeportal.in",
+        "contact_page": "https://indiantradeportal.in/vs.jsp?lang=0&id=0,275",
+        "head_office": "Managed by FIEO / Department of Commerce, New Delhi",
+        "phone": null,
+        "email": null,
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "National Import-Export Record for Yearly Analysis of Trade",
+        "acronym": "NIRYAT",
+        "purpose": "Real-time dashboard for India's foreign trade statistics; commodity/country-wise trade analysis",
+        "official_url": "https://niryat.gov.in",
+        "contact_page": null,
+        "head_office": "Department of Commerce, Vanijya Bhawan, New Delhi",
+        "phone": null,
+        "email": null,
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Agricultural and Processed Food Products Export Development Authority",
+        "acronym": "APEDA",
+        "purpose": "Export promotion of scheduled agricultural and processed food products; registration of exporters; quality standards",
+        "official_url": "https://apeda.gov.in",
+        "contact_page": "https://apeda.gov.in/contact-us",
+        "head_office": "3rd Floor, NCUI Building 3, Siri Institutional Area, August Kranti Marg (Opp. Asiad Village), New Delhi - 110016",
+        "phone": "+91-11-41486013 / 20863919 / 20867008 / 20867007",
+        "technical_support": "+91-9228132200",
+        "email": "headq@apeda.gov.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Federation of Indian Export Organisations",
+        "acronym": "FIEO",
+        "purpose": "Apex body of export promotion councils and commodity boards; export facilitation, policy advocacy, membership services",
+        "official_url": "https://www.fieo.org",
+        "contact_page": "https://fieo.org/view_section.php?id=0,5,17",
+        "head_office": "Niryat Bhawan, Rao Tula Ram Marg, Opp. Army Hospital Research & Referral, New Delhi - 110057",
+        "phone": "1800-121-9000 (Toll Free Exporters Helpline) / 011-46042222 / 011-26150101-4",
+        "email": "fieo@fieo.org",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Invest India",
+        "acronym": "Invest India",
+        "purpose": "National Investment Promotion and Facilitation Agency; FDI facilitation, investor targeting, policy advisory",
+        "official_url": "https://www.investindia.gov.in",
+        "contact_page": "https://www.investindia.gov.in/contact-us",
+        "head_office": "Block 7 & 9, Jodhpur Officer Hostel, Pandara Road, Central Delhi, New Delhi - 110003",
+        "phone": "+91-11-23072328",
+        "email": "contact@investindia.org.in",
+        "ministry": "Ministry of Commerce and Industry / DPIIT"
+      },
+      {
+        "name": "Goods and Services Tax Portal",
+        "acronym": "GST",
+        "purpose": "GST registration, return filing, payment, refunds, and compliance for all taxpayers including exporters",
+        "official_url": "https://www.gst.gov.in",
+        "contact_page": "https://selfservice.gstsystem.in",
+        "head_office": "GSTN, New Delhi",
+        "phone": "1800-103-4786 (GSTN Helpdesk)",
+        "email": "helpdesk@gst.gov.in",
+        "ministry": "Ministry of Finance (CBIC)"
+      },
+      {
+        "name": "Ministry of Corporate Affairs",
+        "acronym": "MCA",
+        "purpose": "Company registration, annual filings, DIN/DSC, compliance under Companies Act, LLP registration",
+        "official_url": "https://www.mca.gov.in",
+        "contact_page": "https://www.mca.gov.in/content/mca/global/en/contact-us.html",
+        "head_office": "3rd Floor, Kartavya Bhawan-1, New Delhi - 110001",
+        "phone": "0120-4832500 (MCA Helpdesk)",
+        "email": "crc.escalation@mca.gov.in",
+        "ministry": "Ministry of Corporate Affairs"
+      },
+      {
+        "name": "Udyam Registration Portal",
+        "acronym": "Udyam",
+        "purpose": "Online registration of Micro, Small and Medium Enterprises (MSMEs); Udyam certificate issuance",
+        "official_url": "https://udyamregistration.gov.in",
+        "contact_page": "https://udyamregistration.gov.in/Ministry-of-mirco-small-medium-enterprise,how-to-register-MSME/grievance-complaint-Contact-Us.htm",
+        "head_office": "Ministry of MSME, Udyog Bhawan, New Delhi",
+        "phone": null,
+        "email": "champions@gov.in",
+        "ministry": "Ministry of Micro, Small and Medium Enterprises"
+      },
+      {
+        "name": "Government e-Marketplace",
+        "acronym": "GeM",
+        "purpose": "Online public procurement platform for government buyers and sellers; e-bidding, reverse auction",
+        "official_url": "https://gem.gov.in",
+        "contact_page": "https://gem.gov.in/contactUs",
+        "head_office": "3rd Floor, Jeevan Bharti Building, Connaught Place, New Delhi",
+        "phone": "1800-419-3436 / 1800-102-3436 (Toll Free)",
+        "email": "helpdesk-gem@gov.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "ECGC Limited",
+        "acronym": "ECGC",
+        "purpose": "Export credit insurance and guarantees for Indian exporters; risk cover for export receivables",
+        "official_url": "https://main.ecgc.in",
+        "contact_page": "https://main.ecgc.in/contact-us/",
+        "head_office": "ECGC Bhawan, CTS No. 393, 393/1 to 45, M.V. Road, Andheri (East), Mumbai - 400069",
+        "phone": "1800-22-4500 (Toll Free) / +91-22-66590500 / 510",
+        "email": "cs@ecgc.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Export-Import Bank of India",
+        "acronym": "EXIM Bank",
+        "purpose": "Export finance, lines of credit, buyer's credit, pre/post-shipment credit, project export financing",
+        "official_url": "https://www.eximbankindia.in",
+        "contact_page": "https://www.eximbankindia.in/contact-us",
+        "head_office": "Centre One Building, Floor 21, World Trade Centre Complex, Cuffe Parade, Mumbai - 400005",
+        "phone": "+91-22-22172600",
+        "email": "Info@eximbankindia.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Department of Commerce",
+        "acronym": "DoC",
+        "purpose": "Trade policy formulation, export promotion, regulation of imports/exports, SEZs, multilateral/bilateral trade negotiations",
+        "official_url": "https://www.commerce.gov.in",
+        "contact_page": "https://www.commerce.gov.in/contact",
+        "head_office": "Vanijya Bhawan, New Delhi - 110011",
+        "phone": "011-23062261",
+        "email": "csoffice@nic.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Directorate General of Commercial Intelligence and Statistics",
+        "acronym": "DGCI&S",
+        "purpose": "Collection, compilation and dissemination of India's foreign trade statistics and commercial information",
+        "official_url": "https://www.dgciskol.gov.in",
+        "contact_page": "https://www.dgciskol.gov.in/Contact_Us.aspx",
+        "head_office": "565, Anandapur, Ward No. 108, Sector-1, Plot No. 22, ECADP, Kolkata - 700107",
+        "phone": "+91-33-24431965 / 24434055-58",
+        "email": "dg.dgcis@nic.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Bureau of Indian Standards",
+        "acronym": "BIS",
+        "purpose": "National Standards Body; product certification (ISI mark), hallmarking, management systems certification",
+        "official_url": "https://www.bis.gov.in",
+        "contact_page": "https://standards.bis.gov.in/website/contact-us",
+        "head_office": "Manak Bhawan, 9, Bahadur Shah Zafar Marg, New Delhi - 110002",
+        "phone": "+91-11-23230131",
+        "email": "info@bis.gov.in",
+        "ministry": "Ministry of Consumer Affairs, Food and Public Distribution"
+      },
+      {
+        "name": "Food Safety and Standards Authority of India",
+        "acronym": "FSSAI",
+        "purpose": "Food safety regulation; FSSAI license/registration; food standards, quality compliance for food exports",
+        "official_url": "https://www.fssai.gov.in",
+        "contact_page": "https://fssai.gov.in/cms/contactus.php",
+        "head_office": "3rd & 4th Floor, FDA Bhawan, Kotla Road, Near Bal Bhawan, New Delhi - 110002",
+        "phone": "1800-112-100 (Helpline)",
+        "email": "helpdesk-foscos@fssai.gov.in",
+        "ministry": "Ministry of Health and Family Welfare"
+      },
+      {
+        "name": "Spices Board India",
+        "acronym": "Spices Board",
+        "purpose": "Promotion of Indian spices exports; quality certification, spice research, development and marketing",
+        "official_url": "https://www.indianspices.com",
+        "contact_page": null,
+        "head_office": "Spices Board House, NH Bypass, Palarivattom, Kochi - 682025, Kerala",
+        "phone": "+91-484-2333610",
+        "email": "spicesboard@nic.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Tea Board India",
+        "acronym": "Tea Board",
+        "purpose": "Development and promotion of tea industry; tea exports promotion, quality standards, market development",
+        "official_url": "https://www.teaboard.gov.in",
+        "contact_page": null,
+        "head_office": "14 BTM Sarani (Brabourne Road), Kolkata - 700001, West Bengal",
+        "phone": "+91-33-2235-1411",
+        "email": "teaboard@teaboard.gov.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Coffee Board of India",
+        "acronym": "Coffee Board",
+        "purpose": "Promotion of Indian coffee production and exports; quality improvement, marketing support",
+        "official_url": "https://www.coffeeboard.gov.in",
+        "contact_page": null,
+        "head_office": "No.1, Dr. Ambedkar Veedhi, Bengaluru - 560001, Karnataka",
+        "phone": "+91-80-22269919",
+        "email": "info@coffeeboard.gov.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Rubber Board",
+        "acronym": "Rubber Board",
+        "purpose": "Development of rubber industry; rubber production, marketing and export promotion",
+        "official_url": "https://www.rubberboard.gov.in",
+        "contact_page": null,
+        "head_office": "Sasthamkotta, Kollam District, Kerala - 690521",
+        "phone": "+91-476-2830700",
+        "email": "help@rubberboard.org.in",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Tobacco Board",
+        "acronym": "Tobacco Board",
+        "purpose": "Regulation and promotion of tobacco production and exports; auction platforms, quality improvement",
+        "official_url": "https://tobaccoboard.com",
+        "contact_page": null,
+        "head_office": "G.T. Road, Guntur - 522004, Andhra Pradesh",
+        "phone": "+91-863-2317500",
+        "email": "tobaccoboard@tobaccoboard.com",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Marine Products Export Development Authority",
+        "acronym": "MPEDA",
+        "purpose": "Promotion of marine products exports; quality certification, infrastructure, market development",
+        "official_url": "https://www.mpeda.gov.in",
+        "contact_page": null,
+        "head_office": "MPEDA House, Panampilly Avenue, Kochi - 682036, Kerala",
+        "phone": "+91-484-2311979",
+        "email": "info@mpeda.gov.in",
+        "ministry": "Ministry of Commerce and Industry"
+      }
+    ],
+    "export_promotion_councils": [
+      {
+        "full_name": "Agricultural and Processed Food Products Export Development Authority",
+        "acronym": "APEDA",
+        "sector": "Agricultural and Processed Food Products",
+        "website": "https://apeda.gov.in",
+        "membership_page": "https://apeda.gov.in",
+        "contact_page": "https://apeda.gov.in/contact-us",
+        "head_office_city": "New Delhi",
+        "phone": "+91-11-41486013",
+        "email": "headq@apeda.gov.in"
+      },
+      {
+        "full_name": "Engineering Export Promotion Council of India",
+        "acronym": "EEPC India",
+        "sector": "Engineering Goods and Products",
+        "website": "https://www.eepcindia.org",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Kolkata",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Gem and Jewellery Export Promotion Council",
+        "acronym": "GJEPC",
+        "sector": "Gems and Jewellery",
+        "website": "https://gjepcindia.com",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Mumbai",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Basic Chemicals, Cosmetics and Dyes Export Promotion Council",
+        "acronym": "CHEMEXCIL",
+        "sector": "Basic Chemicals, Cosmetics, Dyes",
+        "website": "https://www.chemexcil.gov.in",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Mumbai",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Pharmaceuticals Export Promotion Council of India",
+        "acronym": "PHARMEXCIL",
+        "sector": "Pharmaceuticals",
+        "website": "https://www.pharmexcil.in",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Hyderabad",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Plastics Export Promotion Council",
+        "acronym": "PEPC",
+        "sector": "Plastics and Plastic Products",
+        "website": "https://www.pepcindia.com",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Mumbai",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Services Export Promotion Council",
+        "acronym": "SEPC",
+        "sector": "Services Sector",
+        "website": "https://www.servicesepc.org",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "New Delhi",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Council for Leather Exports",
+        "acronym": "CLE",
+        "sector": "Leather and Leather Products",
+        "website": "https://www.leatherindia.org",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Chennai",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Apparel Export Promotion Council",
+        "acronym": "AEPC",
+        "sector": "Apparel and Garments",
+        "website": "https://www.aepcindia.com",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "New Delhi",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Cotton Textiles Export Promotion Council",
+        "acronym": "TEXPROCIL",
+        "sector": "Cotton Textiles",
+        "website": "https://www.texprocil.org",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Mumbai",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Synthetic and Rayon Textiles Export Promotion Council",
+        "acronym": "SRTEPC",
+        "sector": "Synthetic and Rayon Textiles",
+        "website": "https://www.srtepc.org",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Mumbai",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Handloom Export Promotion Council",
+        "acronym": "HEPC",
+        "sector": "Handloom Products",
+        "website": "https://www.hepcindia.com",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Chennai",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Export Promotion Council for Handicrafts",
+        "acronym": "EPCH",
+        "sector": "Handicrafts",
+        "website": "https://www.epch.in",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "New Delhi",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Carpet Export Promotion Council",
+        "acronym": "CEPC",
+        "sector": "Carpets and Floor Coverings",
+        "website": "https://www.carpetexports.in",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Varanasi",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Cashew Export Promotion Council of India",
+        "acronym": "CEPCI",
+        "sector": "Cashew and Cashew Products",
+        "website": "https://www.cashewindia.org",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Kollam, Kerala",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Sports Goods Export Promotion Council",
+        "acronym": "SGEPC",
+        "sector": "Sports Goods",
+        "website": null,
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": null,
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Shellac and Forest Products Export Promotion Council",
+        "acronym": "SFPEPC",
+        "sector": "Shellac and Forest Products",
+        "website": null,
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Kolkata",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Marine Products Export Development Authority",
+        "acronym": "MPEDA",
+        "sector": "Marine Products",
+        "website": "https://www.mpeda.gov.in",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Kochi",
+        "phone": "+91-484-2311979",
+        "email": "info@mpeda.gov.in"
+      },
+      {
+        "full_name": "Export Promotion Council for EOUs and SEZs",
+        "acronym": "EPCES",
+        "sector": "EOUs and SEZs",
+        "website": null,
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "New Delhi",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Powerloom Development and Export Promotion Council",
+        "acronym": "PDEXCIL",
+        "sector": "Powerloom Textiles",
+        "website": null,
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Mumbai",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Wool and Woollens Export Promotion Council",
+        "acronym": "WWEPC",
+        "sector": "Wool and Woollen Textiles",
+        "website": null,
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "New Delhi",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Indian Silk Export Promotion Council",
+        "acronym": "ISEPC",
+        "sector": "Silk and Silk Products",
+        "website": null,
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Bengaluru",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Telecom Equipment and Services Export Promotion Council",
+        "acronym": "TEPC",
+        "sector": "Telecom Equipment and Services",
+        "website": null,
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "New Delhi",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Project Export Promotion Council",
+        "acronym": "PEXCON",
+        "sector": "Project Exports",
+        "website": null,
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "New Delhi",
+        "phone": null,
+        "email": null
+      },
+      {
+        "full_name": "Chemicals Export Promotion Council",
+        "acronym": "CEPC (Chemicals)",
+        "sector": "Chemicals",
+        "website": "https://www.cepc.nic.in",
+        "membership_page": null,
+        "contact_page": null,
+        "head_office_city": "Mumbai",
+        "phone": null,
+        "email": null
+      }
+    ],
+    "commodity_boards": [
+      {
+        "name": "Tea Board India",
+        "url": "https://www.teaboard.gov.in",
+        "head_office": "14 BTM Sarani (Brabourne Road), Kolkata - 700001",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Coffee Board of India",
+        "url": "https://www.coffeeboard.gov.in",
+        "head_office": "No.1, Dr. Ambedkar Veedhi, Bengaluru - 560001",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Rubber Board",
+        "url": "https://www.rubberboard.gov.in",
+        "head_office": "Sasthamkotta, Kollam District, Kerala - 690521",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Spices Board India",
+        "url": "https://www.indianspices.com",
+        "head_office": "Spices Board House, NH Bypass, Palarivattom, Kochi - 682025",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Tobacco Board",
+        "url": "https://tobaccoboard.com",
+        "head_office": "G.T. Road, Guntur - 522004, Andhra Pradesh",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Coconut Development Board",
+        "url": "https://www.coconutboard.gov.in",
+        "head_office": "Kochi, Kerala",
+        "ministry": "Ministry of Agriculture"
+      },
+      {
+        "name": "Coir Board",
+        "url": "https://www.coirboard.gov.in",
+        "head_office": "Kochi, Kerala",
+        "ministry": "Ministry of MSME"
+      },
+      {
+        "name": "Central Silk Board",
+        "url": "https://www.csb.gov.in",
+        "head_office": "Bengaluru",
+        "ministry": "Ministry of Textiles"
+      },
+      {
+        "name": "Agricultural and Processed Food Products Export Development Authority",
+        "acronym": "APEDA",
+        "url": "https://apeda.gov.in",
+        "head_office": "New Delhi",
+        "ministry": "Ministry of Commerce and Industry"
+      },
+      {
+        "name": "Marine Products Export Development Authority",
+        "acronym": "MPEDA",
+        "url": "https://www.mpeda.gov.in",
+        "head_office": "Kochi",
+        "ministry": "Ministry of Commerce and Industry"
+      }
+    ],
+    "banks_for_exporters": [
+      {
+        "bank_name": "State Bank of India",
+        "website": "https://www.sbi.co.in",
+        "trade_finance_page": "https://www.onlinesbi.sbi/sbicollect/icollecthome.htm",
+        "description": "Export credit, pre-shipment/post-shipment finance, LC, forex services"
+      },
+      {
+        "bank_name": "Bank of Baroda",
+        "website": "https://www.bankofbaroda.in",
+        "trade_finance_page": "https://www.bankofbaroda.in/business-banking/trade-finance",
+        "description": "Import-export trade finance, LC, bank guarantees, forex solutions"
+      },
+      {
+        "bank_name": "Punjab National Bank",
+        "website": "https://www.pnbindia.in",
+        "trade_finance_page": "https://www.pnbindia.in/trade-finance.html",
+        "description": "Pre-shipment/post-shipment credit, export LC, forex services"
+      },
+      {
+        "bank_name": "Canara Bank",
+        "website": "https://www.canarabank.com",
+        "trade_finance_page": "https://www.canarabank.com/international-banking.aspx",
+        "description": "Export finance, LC, remittances, forex services"
+      },
+      {
+        "bank_name": "ICICI Bank",
+        "website": "https://www.icicibank.com",
+        "trade_finance_page": "https://www.icicibank.com/business-banking/trade-services",
+        "description": "Trade finance, LC, export credit, forex, supply chain finance"
+      },
+      {
+        "bank_name": "Axis Bank",
+        "website": "https://www.axisbank.com",
+        "trade_finance_page": "https://www.axisbank.com/business-banking/international-banking/overview",
+        "description": "Trade finance, LC, pre/post-shipment finance, forex solutions"
+      },
+      {
+        "bank_name": "HDFC Bank",
+        "website": "https://www.hdfcbank.com",
+        "trade_finance_page": "https://www.hdfcbank.com/business/sme/trade-services",
+        "description": "Trade services, LC, export finance, forex services"
+      },
+      {
+        "bank_name": "YES Bank",
+        "website": "https://www.yesbank.in",
+        "trade_finance_page": "https://www.yesbank.in/corporate-banking/trade-finance",
+        "description": "Trade finance, LC, supply chain, forex",
+        "status": "Some services may be limited"
+      },
+      {
+        "bank_name": "Export-Import Bank of India",
+        "acronym": "EXIM Bank",
+        "website": "https://www.eximbankindia.in",
+        "trade_finance_page": "https://www.eximbankindia.in/financing-india-exports",
+        "description": "Export credit, lines of credit, buyer's credit, project export financing, preshipment credit"
+      },
+      {
+        "bank_name": "Union Bank of India",
+        "website": "https://www.unionbankofindia.co.in",
+        "trade_finance_page": "https://www.unionbankofindia.co.in/english/trade-finance.aspx",
+        "description": "Export-import trade finance, LC, forex services"
+      },
+      {
+        "bank_name": "Indian Bank",
+        "website": "https://www.indianbank.in",
+        "trade_finance_page": "https://www.indianbank.in/international-banking/",
+        "description": "Export finance, LC, remittances, forex dealing"
+      },
+      {
+        "bank_name": "Bank of Maharashtra",
+        "website": "https://www.bankofmaharashtra.in",
+        "trade_finance_page": "https://www.bankofmaharashtra.in/international-banking",
+        "description": "Pre/post-shipment finance, LC, forex services"
+      },
+      {
+        "bank_name": "UCO Bank",
+        "website": "https://www.ucobank.com",
+        "trade_finance_page": "https://www.ucobank.com/english/international-banking.aspx",
+        "description": "Export-import trade finance, LC, forex"
+      },
+      {
+        "bank_name": "Central Bank of India",
+        "website": "https://www.centralbankofindia.co.in",
+        "trade_finance_page": "https://www.centralbankofindia.co.in/international-banking",
+        "description": "Export credit, LC, foreign exchange services"
+      },
+      {
+        "bank_name": "South Indian Bank",
+        "website": "https://www.southindianbank.com",
+        "trade_finance_page": "https://www.southindianbank.com/international",
+        "description": "Trade finance, export/import services, forex, LC"
+      }
+    ],
+    "shipping_lines": [
+      {
+        "name": "Maersk Line",
+        "website": "https://www.maersk.com",
+        "india_contact": "https://www.maersk.com/local-information/india",
+        "description": "Global container shipping; largest carrier serving Indian ports"
+      },
+      {
+        "name": "Mediterranean Shipping Company",
+        "acronym": "MSC",
+        "website": "https://www.msc.com",
+        "india_contact": "https://www.msc.com/in",
+        "description": "Global container shipping; major services to/from India"
+      },
+      {
+        "name": "CMA CGM Group",
+        "website": "https://www.cmacgm-group.com",
+        "india_contact": "https://www.cmacgm-group.com/en/contact/our-offices/India",
+        "description": "Global container shipping; extensive India network"
+      },
+      {
+        "name": "Hapag-Lloyd AG",
+        "website": "https://www.hapag-lloyd.com",
+        "india_contact": "https://www.hapag-lloyd.com/en/office-finder/india.html",
+        "description": "Global container liner shipping"
+      },
+      {
+        "name": "Ocean Network Express",
+        "acronym": "ONE",
+        "website": "https://www.one-line.com",
+        "india_contact": "https://www.one-line.com/en/offices/india",
+        "description": "Global container shipping (Japanese JV)"
+      },
+      {
+        "name": "Evergreen Marine Corporation",
+        "website": "https://www.evergreen-marine.com",
+        "india_contact": null,
+        "description": "Global container shipping; regular India services"
+      },
+      {
+        "name": "COSCO Shipping Lines",
+        "website": "https://www.coscoshipping.com",
+        "india_contact": null,
+        "description": "Global container shipping (Chinese state-owned)"
+      },
+      {
+        "name": "HMM (Hyundai Merchant Marine)",
+        "website": "https://www.hmm21.com",
+        "india_contact": null,
+        "description": "Global container shipping; South Korean carrier"
+      },
+      {
+        "name": "Yang Ming Marine Transport",
+        "website": "https://www.yangming.com",
+        "india_contact": null,
+        "description": "Global container shipping; Taiwanese carrier"
+      },
+      {
+        "name": "ZIM Integrated Shipping Services",
+        "website": "https://www.zim.com",
+        "india_contact": "https://www.zim.com/offices/india",
+        "description": "Global container shipping; Israeli carrier with India presence"
+      },
+      {
+        "name": "Pacific International Lines",
+        "acronym": "PIL",
+        "website": "https://www.pilship.com",
+        "india_contact": null,
+        "description": "Container shipping; Singapore-based, strong Asia-Africa network"
+      },
+      {
+        "name": "Grimaldi Group",
+        "website": "https://www.grimaldi.napoli.it",
+        "india_contact": "https://www.grimaldi.napoli.it/contacts.html",
+        "description": "Roll-on/Roll-off and container shipping"
+      }
+    ],
+    "transporters": [
+      {
+        "name": "Delhivery",
+        "website": "https://www.delhivery.com",
+        "services_page": "https://www.delhivery.com/business",
+        "description": "Logistics, express parcel, freight, supply chain solutions"
+      },
+      {
+        "name": "Blue Dart Express",
+        "website": "https://www.bluedart.com",
+        "services_page": "https://www.bluedart.com/domestic-express",
+        "description": "Express courier, air freight, domestic and international"
+      },
+      {
+        "name": "Gati-Kwe",
+        "website": "https://www.gati.com",
+        "services_page": "https://www.gati.com/services",
+        "description": "Express distribution, supply chain, freight forwarding"
+      },
+      {
+        "name": "Ecom Express",
+        "website": "https://www.ecomexpress.in",
+        "services_page": "https://www.ecomexpress.in/services",
+        "description": "E-commerce logistics, parcel delivery"
+      },
+      {
+        "name": "ARAMEX (India)",
+        "website": "https://www.aramex.com",
+        "india_site": "https://www.aramex.com/in/en",
+        "description": "International courier, freight forwarding, logistics"
+      },
+      {
+        "name": "Transport Corporation of India",
+        "acronym": "TCI",
+        "website": "https://www.tcil.com",
+        "services_page": "https://www.tcil.com/services",
+        "description": "Full truckload, LTL, supply chain, warehousing, cold chain"
+      },
+      {
+        "name": "VRL Logistics",
+        "website": "https://www.vrllogistics.com",
+        "services_page": "https://www.vrllogistics.com/services",
+        "description": "Road transport, parcel, cargo, logistics services"
+      },
+      {
+        "name": "Mahindra Logistics",
+        "website": "https://www.mahindralogistics.com",
+        "services_page": "https://www.mahindralogistics.com/services",
+        "description": "Supply chain management, freight, warehousing, auto logistics"
+      },
+      {
+        "name": "DTDC Express",
+        "website": "https://www.dtdc.in",
+        "services_page": "https://www.dtdc.in/domestic",
+        "description": "Domestic and international courier, e-commerce logistics"
+      },
+      {
+        "name": "FedEx India",
+        "website": "https://www.fedex.com/en-in/home.html",
+        "services_page": "https://www.fedex.com/en-in/shipping.html",
+        "description": "International express shipping, freight, e-commerce solutions"
+      },
+      {
+        "name": "DHL India",
+        "website": "https://www.dhl.com/in-en/home.html",
+        "services_page": "https://www.dhl.com/in-en/home/our-divisions/global-forwarding.html",
+        "description": "International express, freight forwarding (air/ocean/road), supply chain"
+      },
+      {
+        "name": "UPS India",
+        "website": "https://www.ups.com/in/en/Home.page",
+        "services_page": null,
+        "description": "International express, freight, supply chain solutions"
+      }
+    ],
+    "packaging_providers": [
+      {
+        "name": "ITC Packaging (ITC Ltd - Paperboards & Specialty Papers)",
+        "website": "https://www.itcportal.com/businesses/paperboards-specialty-papers",
+        "description": "Paperboard packaging, cartons, folding boxes for FMCG, food, pharma"
+      },
+      {
+        "name": "Parksons Packaging",
+        "website": "https://www.parksons.com",
+        "services_page": "https://www.parksons.com/capabilities",
+        "description": "Folding cartons, rigid boxes, corrugated packaging, labels"
+      },
+      {
+        "name": "TCPL Packaging",
+        "website": "https://www.tcplpackaging.com",
+        "description": "Cartons, leaflets, packaging solutions for pharma, FMCG, liquor"
+      },
+      {
+        "name": "Huhtamaki India Ltd",
+        "website": "https://www.huhtamaki.com",
+        "india_site": "https://www.huhtamaki.com/en/asia/india",
+        "description": "Molded fiber packaging, food service packaging, flexible packaging"
+      },
+      {
+        "name": "Uflex Ltd",
+        "website": "https://www.uflexltd.com",
+        "description": "Flexible packaging, laminated films, packaging machinery"
+      },
+      {
+        "name": "EPL Limited (formerly Essel Propack)",
+        "website": "https://www.eplworld.com",
+        "description": "Laminated tubes, plastic tubes, cosmetic and pharma packaging"
+      },
+      {
+        "name": "Mold-Tek Packaging",
+        "website": "https://www.moldtekpackaging.com",
+        "description": "Rigid plastic packaging, containers, pails, IML containers"
+      },
+      {
+        "name": "Manjushree Technopack",
+        "website": "https://www.manjushree.com",
+        "description": "Rigid plastic packaging, PET preforms, jars, bottles"
+      },
+      {
+        "name": "Amcor India",
+        "website": "https://www.amcor.com",
+        "india_site": "https://www.amcor.com/locations/asia/india",
+        "description": "Flexible and rigid plastic packaging, films, folding cartons"
+      },
+      {
+        "name": "Polyplex Corporation",
+        "website": "https://www.polyplex.com",
+        "description": "PET films, BOPET films, thin films for packaging and industrial use"
+      },
+      {
+        "name": "Jindal Poly Films",
+        "website": "https://www.jindalpoly.com",
+        "description": "BOPET, BOPP films for flexible packaging, labels, lamination"
+      }
+    ]
+  }
+}
