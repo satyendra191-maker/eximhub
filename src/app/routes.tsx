@@ -4,6 +4,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { QuickAccessToolkit } from '@/components/sections/QuickAccessToolkit'
+import { SuggestResource } from '@/components/sections/SuggestResource'
 import { PortalSection } from '@/components/sections/PortalSection'
 import { EPCDirectory } from '@/components/sections/EPCDirectory'
 import { CommodityBoardsSection } from '@/components/sections/CommodityBoardsSection'
@@ -48,6 +49,7 @@ export function HomePage() {
       <main id="main-content" className="flex-1">
         <HeroSection />
         <QuickAccessToolkit />
+        <SuggestResource />
         <PortalSection />
         <EPCDirectory />
         <CommodityBoardsSection />

@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion'
 
 const stats = [
-  { value: '10+', label: 'Government Portals' },
-  { value: '25+', label: 'Document Templates' },
-  { value: '14', label: 'Checklist Items' },
+  { value: '14', label: 'Government Portals' },
+  { value: '16', label: 'Export Promotion Councils' },
+  { value: '24', label: 'Document Templates' },
   { value: '7', label: 'Journey Steps' },
 ]
 

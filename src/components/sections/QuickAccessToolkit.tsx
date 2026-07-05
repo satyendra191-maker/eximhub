@@ -1,132 +1,109 @@
-import { motion } from 'framer-motion'
-import type { ElementType } from 'react'
+'use client'
+
 import {
-  Rocket,
-  FileCheck,
-  Shield,
-  Globe,
-  BarChart3,
-  MapPin,
-  Landmark,
-  Building2,
-  Ship,
-  Truck,
-  Package,
-  ShieldCheck,
-  SearchCheck,
-  ClipboardCheck,
-  Search
+  Building2, Globe, BarChart3, Landmark,
+  Ship, Shield, BadgeCheck, GraduationCap,
+  ArrowRight,
 } from 'lucide-react'
-import { cn } from '@/lib/utils'
 
-interface QuickAccessItem {
-  id: string
-  title: string
-  description: string
-  icon: string
-  href: string
-  category: string
-}
-
-const quickAccessItems: QuickAccessItem[] = [
-  { id: 'start-exporting', title: 'Start Exporting', description: 'Step-by-step guide to begin your export journey', icon: 'Rocket', href: '#journey', category: 'government' },
-  { id: 'get-iec', title: 'Get IEC', description: 'Apply for Import-Export Code online at DGFT', icon: 'FileCheck', href: '#portals', category: 'customs' },
-  { id: 'customs-icegate', title: 'Customs & ICEGATE', description: 'File shipping bills and clear customs', icon: 'Shield', href: '#portals', category: 'customs' },
-  { id: 'find-epc', title: 'Find Your EPC', description: 'Locate your Export Promotion Council', icon: 'Globe', href: '#epc', category: 'epc' },
-  { id: 'trade-data', title: 'Check Trade Data', description: 'Research export-import statistics and trends', icon: 'BarChart3', href: '#trade-intelligence', category: 'trade' },
-  { id: 'explore-odop', title: 'Explore ODOP', description: 'Discover One District One Product opportunities', icon: 'MapPin', href: '#odop', category: 'odop' },
-  { id: 'export-finance', title: 'Export Finance', description: 'Find trade finance and banking services', icon: 'Landmark', href: '#banking', category: 'bank' },
-  { id: 'find-cha', title: 'Find CHA', description: 'Locate customs house agents for clearance', icon: 'Building2', href: '#cha', category: 'customs' },
-  { id: 'shipping-lines', title: 'Shipping Lines', description: 'Book container shipping and track cargo', icon: 'Ship', href: '#shipping', category: 'shipping' },
-  { id: 'find-transporter', title: 'Find Transporter', description: 'Hire logistics and transport providers', icon: 'Truck', href: '#transporters', category: 'logistics' },
-  { id: 'find-packaging', title: 'Packaging Services', description: 'Get export-grade packaging solutions', icon: 'Package', href: '#packaging', category: 'packaging' },
-  { id: 'export-insurance', title: 'Export Insurance', description: 'ECGC credit insurance & risk cover', icon: 'ShieldCheck', href: '#portals', category: 'insurance' },
-  { id: 'buyer-credibility', title: 'Buyer Credibility', description: 'Check buyer creditworthiness before shipping', icon: 'SearchCheck', href: '#portals', category: 'insurance' },
-  { id: 'compliance', title: 'Certification & Compliance', description: 'Meet quality standards and regulations', icon: 'ClipboardCheck', href: '#compliance', category: 'compliance' },
-  { id: 'faq', title: 'Export FAQ', description: 'Answers to common export questions', icon: 'Search', href: '#faq', category: 'learning' },
+const categories = [
+  {
+    id: 'portals',
+    title: 'Government Portals',
+    description: 'DGFT, ICEGATE, APEDA, FIEO and more',
+    icon: Building2,
+    href: '#portals',
+    color: 'from-primary/10 to-primary/5 text-primary border-primary/20',
+  },
+  {
+    id: 'epc',
+    title: 'Export Promotion Councils',
+    description: 'Find your sector-specific EPC and register',
+    icon: Globe,
+    href: '#epc',
+    color: 'from-purple-500/10 to-purple-500/5 text-purple-600 border-purple-500/20',
+  },
+  {
+    id: 'trade',
+    title: 'Trade Data & Intelligence',
+    description: 'Market research, NIRYAT, TradeStat analytics',
+    icon: BarChart3,
+    href: '#trade-intelligence',
+    color: 'from-cyan-500/10 to-cyan-500/5 text-cyan-600 border-cyan-500/20',
+  },
+  {
+    id: 'banking',
+    title: 'Export Finance & Banking',
+    description: 'EXIM Bank, ECGC insurance, trade finance',
+    icon: Landmark,
+    href: '#banking',
+    color: 'from-emerald-500/10 to-emerald-500/5 text-emerald-600 border-emerald-500/20',
+  },
+  {
+    id: 'shipping',
+    title: 'Shipping & Logistics',
+    description: 'Shipping lines, transporters, CHA, packaging',
+    icon: Ship,
+    href: '#shipping',
+    color: 'from-indigo-500/10 to-indigo-500/5 text-indigo-600 border-indigo-500/20',
+  },
+  {
+    id: 'customs',
+    title: 'Customs & Clearance',
+    description: 'ICEGATE, shipping bills, HS code search',
+    icon: Shield,
+    href: '#hs-code-search',
+    color: 'from-amber-500/10 to-amber-500/5 text-amber-600 border-amber-500/20',
+  },
+  {
+    id: 'compliance',
+    title: 'Compliance & Certification',
+    description: 'FSSAI, BIS, organic, phytosanitary standards',
+    icon: BadgeCheck,
+    href: '#compliance',
+    color: 'from-rose-500/10 to-rose-500/5 text-rose-600 border-rose-500/20',
+  },
+  {
+    id: 'journey',
+    title: 'Export Journey Guide',
+    description: 'Step-by-step from readiness to shipment',
+    icon: GraduationCap,
+    href: '#journey',
+    color: 'from-orange-500/10 to-orange-500/5 text-orange-600 border-orange-500/20',
+  },
 ]
-
-const iconMap: Record<string, ElementType> = {
-  Rocket, FileCheck, Shield, Globe, BarChart3, MapPin,
-  Landmark, Building2, Ship, Truck, Package, ShieldCheck, SearchCheck,
-  ClipboardCheck, Search
-}
-
-const categoryColors: Record<string, string> = {
-  government: 'bg-exim-government-light border-exim-government-border text-exim-government-dark hover:shadow-government',
-  epc: 'bg-exim-epc-light border-exim-epc-border text-exim-epc-dark hover:shadow-epc',
-  odop: 'bg-exim-odop-light border-exim-odop-border text-exim-odop-dark hover:shadow-odop',
-  trade: 'bg-exim-trade-light border-exim-trade-border text-exim-trade-dark hover:shadow-trade',
-  bank: 'bg-exim-bank-light border-exim-bank-border text-exim-bank-dark hover:shadow-bank',
-  customs: 'bg-exim-customs-light border-exim-customs-border text-exim-customs-dark hover:shadow-customs',
-  shipping: 'bg-exim-shipping-light border-exim-shipping-border text-exim-shipping-dark hover:shadow-shipping',
-  logistics: 'bg-exim-logistics-light border-exim-logistics-border text-exim-logistics-dark hover:shadow-logistics',
-  packaging: 'bg-exim-packaging-light border-exim-packaging-border text-exim-packaging-dark hover:shadow-packaging',
-  port: 'bg-exim-port-light border-exim-port-border text-exim-port-dark hover:shadow-port',
-  insurance: 'bg-exim-insurance-light border-exim-insurance-border text-exim-insurance-dark hover:shadow-insurance',
-  compliance: 'bg-exim-compliance-light border-exim-compliance-border text-exim-compliance-dark hover:shadow-compliance',
-  learning: 'bg-exim-learning-light border-exim-learning-border text-exim-learning-dark hover:shadow-learning',
-  discovery: 'bg-exim-discovery-light border-exim-discovery-border text-exim-discovery-dark hover:shadow-discovery',
-  events: 'bg-exim-events-light border-exim-events-border text-exim-events-dark hover:shadow-events',
-}
-
-const container = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { staggerChildren: 0.03 } }
-}
-
-const item = {
-  hidden: { opacity: 0, y: 15 },
-  show: { opacity: 1, y: 0 }
-}
 
 export function QuickAccessToolkit() {
   return (
-    <section id="tools" className="exim-section bg-gradient-to-b from-white to-exim-bg-secondary/30">
+    <section id="tools" className="py-16 md:py-20">
       <div className="exim-container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-12 text-center"
-        >
-          <h2 className="text-3xl font-bold tracking-tight exim-text-primary sm:text-4xl">
-            Start Your Export Journey
+        <div className="mb-10 text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            Browse by Category
           </h2>
-          <p className="mt-3 text-lg exim-text-secondary">
-            Choose your export ecosystem category to begin
+          <p className="mt-3 text-lg text-muted-foreground">
+            Find what you need — organized for Indian exporters
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7"
-        >
-          {quickAccessItems.map((item_) => (
-            <motion.a
-              key={item_.id}
-              variants={item}
-              href={item_.href}
-              className={cn(
-                'group exim-card flex flex-col items-center rounded-xl p-4 text-center transition-all duration-200',
-                'hover:shadow-lg hover:-translate-y-1',
-                categoryColors[item_.category] || categoryColors['government']
-              )}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {categories.map((cat) => (
+            <a
+              key={cat.id}
+              href={cat.href}
+              className="group relative flex items-start gap-4 rounded-xl border bg-card p-5 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98]"
             >
-              <div className="mb-2 rounded-lg p-2.5 exim-hover-lift">
-                {(() => {
-                    const Icon: ElementType | undefined = iconMap[item_.icon]
-                    return Icon ? <Icon className="h-5 w-5" /> : null
-                  })()}
+              <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${cat.color}`}>
+                <cat.icon className="h-6 w-6" />
               </div>
-              <span className="text-xs font-semibold exim-text-primary leading-tight">{item_.title}</span>
-              <span className="text-xs exim-text-secondary mt-1 line-clamp-2">{item_.description}</span>
-            </motion.a>
+              <div className="min-w-0 flex-1">
+                <h3 className="text-base font-semibold text-foreground">{cat.title}</h3>
+                <p className="mt-1 text-sm text-muted-foreground leading-snug">{cat.description}</p>
+              </div>
+              <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-muted-foreground/40 transition-all duration-200 group-hover:translate-x-0.5 group-hover:text-primary/60" />
+            </a>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   )
