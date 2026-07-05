@@ -3,26 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>EximHub — India Export Ecosystem Gateway: Portals, EPCs, Trade Data, Banking & Logistics Resources</title>
-    <meta name="description" content="Access verified government export portals, Export Promotion Councils, trade statistics, ODOP resources, banks, customs services, shipping lines, logistics providers, transporters and packaging partners from one mobile-friendly export gateway." />
+    <title>EximHub — India Export Ecosystem Gateway</title>
+    <meta name="description" content="Find verified government export portals, IEC registration, customs clearance, trade data, export promotion councils, banking, shipping, and compliance resources for Indian exporters in one organized hub." />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://eximhub.vercel.app/" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="EximHub — India Export Ecosystem Gateway" />
-    <meta property="og:description" content="Your all-in-one gateway to Indian export ecosystem. DGFT, ICEGATE, EPCs, trade data, ODOP, banks, CHA, shipping, transporters, packaging & more." />
+    <meta property="og:description" content="Your organized guide to India's export ecosystem — DGFT, ICEGATE, EPCs, trade data, banking, shipping, logistics, and compliance resources." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eximhub.vercel.app/" />
     <meta property="og:image" content="/opengraph.jpg" />
+    <meta property="og:locale" content="en_IN" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="EximHub — India Export Ecosystem Gateway" />
-    <meta name="twitter:description" content="Everything an Indian exporter needs — government portals, EPCs, trade data, banking, shipping, logistics, packaging, and compliance resources in one place." />
+    <meta name="twitter:description" content="Everything an Indian exporter needs — government portals, EPCs, trade data, banking, shipping, logistics, and compliance resources in one place." />
     <meta name="twitter:image" content="/opengraph.jpg" />
 
     <!-- Theme -->
+    <meta name="theme-color" content="#0f52ba" />
     <script>
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#0d1117');
       }
     </script>
 
@@ -30,6 +36,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "EximHub",
+      "url": "https://eximhub.vercel.app/",
+      "description": "Independent navigation platform for India's export ecosystem — government portals, EPCs, trade data, banking, shipping, logistics, and compliance resources.",
+      "inLanguage": "en-IN",
+      "about": {
+        "@type": "Thing",
+        "name": "India Export Ecosystem"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

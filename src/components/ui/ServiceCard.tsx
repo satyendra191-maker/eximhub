@@ -1,38 +1,42 @@
-import { motion } from 'framer-motion';
-import { ExternalLink, Star, Share2, Link } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardTitle } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion'
+import {
+  ExternalLink, Star, Share2, Link,
+  FileText, Ship, Search, BarChart3, Sprout,
+  Globe, Building2, MapPin, PieChart, TrendingUp,
+  Package, Shield, SearchCheck,
+} from 'lucide-react'
+import type { ElementType } from 'react'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Card, CardTitle } from '@/components/ui/card'
+import { cn } from '@/lib/utils'
 
-// Types for service cards
 export interface ServiceResource {
-  id: string;
-  name: string;
-  shortName?: string;
-  acronym?: string;
-  icon: string;
-  capabilitySummary: string;
-  description: string;
-  trustClassification: 'OFFICIAL' | 'VERIFIED' | 'REGULATORY' | 'EXPORT_BODY' | 'FINANCIAL' | 'CERTIFICATION';
-  category: string;
-  pricing: 'Free' | 'Paid' | 'Application Fee' | 'Transaction Based' | 'Subscription' | 'Government Fee' | 'Contact for Pricing';
-  ownership: 'GOVT.' | 'PRIVATE' | 'ASSOCIATION' | 'INTERNATIONAL' | 'BANK' | 'REGULATOR' | 'EPC' | 'PSU';
-  officialWebsite: string;
-  internalDetailsRoute: string;
+  id: string
+  name: string
+  shortName?: string
+  acronym?: string
+  icon: string
+  capabilitySummary: string
+  description: string
+  trustClassification: 'OFFICIAL' | 'VERIFIED' | 'REGULATORY' | 'EXPORT_BODY' | 'FINANCIAL' | 'CERTIFICATION'
+  category: string
+  pricing: 'Free' | 'Paid' | 'Application Fee' | 'Transaction Based' | 'Subscription' | 'Government Fee' | 'Contact for Pricing'
+  ownership: 'GOVT.' | 'PRIVATE' | 'ASSOCIATION' | 'INTERNATIONAL' | 'BANK' | 'REGULATOR' | 'EPC' | 'PSU'
+  officialWebsite: string
+  internalDetailsRoute: string
   contactInfo?: {
-    phone?: string;
-    email?: string;
-    headOffice?: string;
-    whatsapp?: string;
-  };
-  expertise?: string[];
-  services?: string[];
-  verificationStatus: 'verified' | 'pending' | 'unverified';
-  lastVerified: string;
+    phone?: string
+    email?: string
+    headOffice?: string
+    whatsapp?: string
+  }
+  expertise?: string[]
+  services?: string[]
+  verificationStatus: 'verified' | 'pending' | 'unverified'
+  lastVerified: string
 }
 
-// Trust badge configurations
 const TRUST_BADGE_CONFIG = {
   'OFFICIAL': { label: 'OFFICIAL', variant: 'default' as const, className: 'bg-primary text-primary-foreground' },
   'VERIFIED': { label: 'VERIFIED', variant: 'secondary' as const, className: 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' },
@@ -40,37 +44,25 @@ const TRUST_BADGE_CONFIG = {
   'EXPORT_BODY': { label: 'EXPORT PROMOTION', variant: 'outline' as const, className: 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400' },
   'FINANCIAL': { label: 'FINANCIAL INSTITUTION', variant: 'outline' as const, className: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-400' },
   'CERTIFICATION': { label: 'CERTIFICATION BODY', variant: 'outline' as const, className: 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400' },
-};
+}
 
-const getTrustBadgeConfig = (classification: string) => TRUST_BADGE_CONFIG[classification as keyof typeof TRUST_BADGE_CONFIG] || TRUST_BADGE_CONFIG['OFFICIAL'];
+const getTrustBadgeConfig = (classification: string) => TRUST_BADGE_CONFIG[classification as keyof typeof TRUST_BADGE_CONFIG] || TRUST_BADGE_CONFIG['OFFICIAL']
 
-// Icon mapping
-const iconMap: Record<string, string> = {
-  FileText: '📄',
-  Ship: '🚢',
-  Search: '🔍',
-  BarChart3: '📊',
-  Sprout: '🌱',
-  Globe: '🌐',
-  Building2: '🏢',
-  MapPin: '📍',
-  PieChart: '📈',
-  TrendingUp: '📈',
-  Package: '📦',
-  Layers: '📦',
-  Shield: '🛡️',
-  SearchCheck: '🔎',
-};
+const iconMap: Record<string, ElementType> = {
+  FileText, Ship, Search, BarChart3, Sprout,
+  Globe, Building2, MapPin, PieChart, TrendingUp,
+  Package, Shield, SearchCheck,
+}
 
 export interface ServiceCardProps {
-  service: ServiceResource;
-  showActions?: boolean;
-  showTrustBadge?: boolean;
-  showMetadata?: boolean;
-  onViewDetails?: (service: ServiceResource) => void;
-  onLaunchWebsite?: (service: ServiceResource) => void;
-  onBookmark?: (service: ServiceResource) => void;
-  className?: string;
+  service: ServiceResource
+  showActions?: boolean
+  showTrustBadge?: boolean
+  showMetadata?: boolean
+  onViewDetails?: (service: ServiceResource) => void
+  onLaunchWebsite?: (service: ServiceResource) => void
+  onBookmark?: (service: ServiceResource) => void
+  className?: string
 }
 
 export function ServiceCard({
@@ -83,23 +75,24 @@ export function ServiceCard({
   onBookmark,
   className,
 }: ServiceCardProps) {
-  const trustBadge = getTrustBadgeConfig(service.trustClassification);
-  
+  const trustBadge = getTrustBadgeConfig(service.trustClassification)
+  const Icon = iconMap[service.icon] || Building2
+
   const handleLaunchWebsite = () => {
     if (onLaunchWebsite) {
-      onLaunchWebsite(service);
+      onLaunchWebsite(service)
     } else {
-      window.open(service.officialWebsite, '_blank', 'noopener noreferrer');
+      window.open(service.officialWebsite, '_blank', 'noopener noreferrer')
     }
-  };
-  
+  }
+
   const handleViewDetails = () => {
     if (onViewDetails) {
-      onViewDetails(service);
+      onViewDetails(service)
     } else {
-      window.location.hash = service.internalDetailsRoute;
+      window.location.hash = service.internalDetailsRoute
     }
-  };
+  }
 
   return (
     <motion.div
@@ -110,10 +103,11 @@ export function ServiceCard({
       className={className}
     >
       <Card className="h-full overflow-hidden transition-all duration-200 hover:shadow-lg border-border/50">
-        {/* Header with Icon and Title */}
         <div className="p-5 pb-3">
           <div className="flex items-start gap-3 mb-3">
-            <div className="text-3xl shrink-0">{iconMap[service.icon] ?? '🔗'}</div>
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <Icon className="h-5 w-5" aria-hidden="true" />
+            </div>
             <div className="flex-1 min-w-0">
               <CardTitle className="text-lg font-semibold leading-tight mb-1">
                 {service.name}
@@ -130,11 +124,10 @@ export function ServiceCard({
           </div>
         </div>
 
-        {/* Trust Badge */}
         {showTrustBadge && (
           <div className="px-5 mb-3">
-            <Badge 
-              variant="outline" 
+            <Badge
+              variant="outline"
               className={cn('text-xs font-medium', trustBadge.className)}
             >
               {trustBadge.label}
@@ -142,14 +135,12 @@ export function ServiceCard({
           </div>
         )}
 
-        {/* Description */}
         <div className="px-5 mb-4">
           <p className="text-sm text-muted-foreground line-clamp-3">
             {service.description}
           </p>
         </div>
 
-        {/* Metadata Row */}
         {showMetadata && (
           <div className="px-5 mb-4">
             <div className="flex flex-wrap gap-2">
@@ -166,7 +157,6 @@ export function ServiceCard({
           </div>
         )}
 
-        {/* Actions */}
         {showActions && (
           <div className="px-5 pb-5">
             <div className="flex gap-2 mb-3">
@@ -218,7 +208,6 @@ export function ServiceCard({
           </div>
         )}
 
-        {/* Verification Status */}
         <div className="px-5 pb-3 pt-2 border-t">
           <div className="flex items-center justify-between text-xs text-muted-foreground">
             <span>Verified: {service.lastVerified}</span>
@@ -229,5 +218,5 @@ export function ServiceCard({
         </div>
       </Card>
     </motion.div>
-  );
+  )
 }

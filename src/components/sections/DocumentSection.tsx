@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
 import { documentCategories } from '@/config/documents'
-import { documentGenerators, documentPrinters } from '@/utils/document-generator'
+
 import { cn } from '@/lib/utils'
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -126,8 +126,9 @@ export function DocumentSection() {
                                 size="sm"
                                 variant="outline"
                                 className="h-9 flex-1 sm:flex-none gap-1.5 text-xs"
-                                onClick={() => {
-                                  const fn = documentPrinters[doc.filename]
+                                onClick={async () => {
+                                  const mod = await import('@/utils/document-generator')
+                                  const fn = mod.documentPrinters[doc.filename]
                                   if (fn) fn()
                                 }}
                               >
@@ -137,8 +138,9 @@ export function DocumentSection() {
                               <Button
                                 size="sm"
                                 className="h-9 flex-1 sm:flex-none gap-1.5 text-xs"
-                                onClick={() => {
-                                  const gen = documentGenerators[doc.filename]
+                                onClick={async () => {
+                                  const mod = await import('@/utils/document-generator')
+                                  const gen = mod.documentGenerators[doc.filename]
                                   if (gen) gen()
                                 }}
                               >

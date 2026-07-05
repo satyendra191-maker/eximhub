@@ -76,9 +76,9 @@ export function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
           >
-            <span className="inline-flex items-center gap-2 rounded-full border border-exim-government/20 bg-exim-government-light/80 px-4 py-1.5 text-sm text-exim-government font-medium shadow-sm backdrop-blur-sm">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm text-primary font-medium shadow-sm backdrop-blur-sm">
               <Sparkles className="h-4 w-4" />
-              <span>Trusted by 1000+ Exporters</span>
+              <span>India Export Ecosystem Gateway</span>
             </span>
           </motion.div>
 

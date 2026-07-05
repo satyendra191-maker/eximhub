@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MessageCircle, X, Send, Bot, User } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -28,9 +28,9 @@ const botResponses: Record<string, string> = {
 }
 
 const defaultResponses = [
-  'Namaste! I\'m your Export AI Assistant. Ask me about IEC, HS Codes, schemes, or any export query.',
-  'I can help you with export documentation, government portals, compliance requirements, and more. What would you like to know?',
-  'For specific queries about your product, please provide the HS code or product name for detailed guidance.',
+  'I can help you with IEC, HS Codes, export schemes, documentation, and more. What would you like to know?',
+  'Try asking about specific topics like IEC registration, HS code search, or export benefits.',
+  'For product-specific queries, mention the product name or HS code for more relevant guidance.',
 ]
 
 interface Message {
@@ -44,13 +44,15 @@ export function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '0',
-      text: 'Namaste! I\'m your Export AI Assistant. Ask me about IEC, HS Codes, schemes, or any export query.',
+      text: 'Hi! I\'m the EximHub Export Assistant. Ask me about IEC, HS Codes, schemes, or any export query.',
       sender: 'bot',
     },
   ])
   const [input, setInput] = useState('')
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
+  const panelRef = useRef<HTMLDivElement>(null)
+  const toggleRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     if (open && inputRef.current) {
@@ -62,7 +64,42 @@ export function Chatbot() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
-  const handleSend = () => {
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [open])
+
+  useEffect(() => {
+    if (!open) return
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setOpen(false)
+        toggleRef.current?.focus()
+      }
+      if (e.key === 'Tab' && panelRef.current) {
+        const focusable = panelRef.current.querySelectorAll<HTMLElement>(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        )
+        const first = focusable[0]
+        const last = focusable[focusable.length - 1]
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault()
+          last?.focus()
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault()
+          first?.focus()
+        }
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [open])
+
+  const handleSend = useCallback(() => {
     const text = input.trim()
     if (!text) return
 
@@ -93,15 +130,16 @@ export function Chatbot() {
         { id: (Date.now() + 1).toString(), text: response, sender: 'bot' },
       ])
     }, 600)
-  }
+  }, [input])
 
   return (
     <>
       <Button
+        ref={toggleRef}
         onClick={() => setOpen(!open)}
         className="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-full shadow-lg shadow-primary/25"
         size="icon"
-        aria-label="Toggle AI Chat Assistant"
+        aria-label={open ? 'Close export assistant' : 'Open export assistant'}
       >
         {open ? <X className="h-5 w-5" /> : <MessageCircle className="h-5 w-5" />}
       </Button>
@@ -109,23 +147,32 @@ export function Chatbot() {
       <AnimatePresence>
         {open && (
           <motion.div
+            ref={panelRef}
+            role="dialog"
+            aria-label="Export assistant chat"
+            aria-modal="true"
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2, ease: 'easeOut' }}
-            className="fixed bottom-20 right-6 z-50 flex w-[350px] flex-col rounded-xl border bg-card shadow-floating sm:w-[400px]"
+            className="fixed bottom-20 right-4 z-50 flex w-[calc(100vw-2rem)] max-w-[400px] flex-col rounded-xl border bg-card shadow-floating sm:right-6"
           >
             <div className="flex items-center gap-2 border-b p-4">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary">
                 <Bot className="h-4 w-4 text-primary-foreground" />
               </div>
               <div>
-                <p className="text-sm font-medium">Export AI Assistant</p>
+                <p className="text-sm font-medium">Export Assistant</p>
                 <p className="text-xs text-muted-foreground">Ask about IEC, HS Codes...</p>
               </div>
             </div>
 
-            <div className="flex h-[350px] flex-col gap-3 overflow-y-auto p-4">
+            <div
+              className="flex h-[350px] flex-col gap-3 overflow-y-auto p-4"
+              role="log"
+              aria-label="Chat messages"
+              aria-live="polite"
+            >
               {messages.map((msg) => (
                 <div
                   key={msg.id}
@@ -139,6 +186,7 @@ export function Chatbot() {
                       'flex h-7 w-7 shrink-0 items-center justify-center rounded-full',
                       msg.sender === 'user' ? 'bg-muted' : 'bg-primary/10',
                     )}
+                    aria-hidden="true"
                   >
                     {msg.sender === 'user' ? (
                       <User className="h-3.5 w-3.5" />
@@ -171,6 +219,7 @@ export function Chatbot() {
                 }}
                 placeholder="Ask about IEC, HS Codes..."
                 className="h-9 text-sm"
+                aria-label="Type your question"
               />
               <Button
                 size="icon"
