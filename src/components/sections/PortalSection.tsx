@@ -1,5 +1,3 @@
-'use client'
-
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
@@ -53,7 +51,7 @@ export function PortalSection() {
   }, [search, filter])
 
   return (
-    <section id="tools" className="scroll-mt-20 py-20">
+    <section id="portals" className="scroll-mt-20 py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -129,7 +127,7 @@ export function PortalSection() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.05 }}
                 >
-                  <Card className="card-lift premium-shadow group h-full overflow-hidden transition-all hover:premium-shadow-hover hover:-translate-y-1">
+                  <Card className="card-lift premium-shadow group h-full overflow-hidden transition-all duration-200 hover:premium-shadow-hover hover:-translate-y-1 border-border/50">
                     <div
                       className={cn(
                         'flex items-center gap-3 bg-gradient-to-r p-4 text-white',
@@ -147,7 +145,7 @@ export function PortalSection() {
                       </div>
                       <Badge
                         variant="outline"
-                        className="border-white/30 bg-white/10 text-white"
+                        className="border-white/30 bg-white/10 text-white shrink-0"
                       >
                         OFFICIAL
                       </Badge>
@@ -169,7 +167,7 @@ export function PortalSection() {
                         </span>
                         <span
                           className={cn(
-                            'inline-block rounded-full px-2 py.5 text-xs font-medium',
+                            'inline-block rounded-full px-2 py-0.5 text-xs font-medium',
                             costBadgeColors[portal.cost] ?? '',
                           )}
                         >

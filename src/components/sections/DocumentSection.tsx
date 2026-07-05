@@ -106,30 +106,30 @@ export function DocumentSection() {
                             </Badge>
                           </div>
 
-                          <div className="mt-2 flex items-center justify-between gap-2">
+                          <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                             <CollapsibleTrigger asChild>
                               <Button
                                 variant="ghost"
                                 size="sm"
-                                className="h-7 px-2 text-xs"
+                                className="h-9 w-full sm:w-auto px-3 text-xs justify-center"
                               >
                                 {expanded === doc.filename ? (
-                                  <ChevronUp className="h-3 w-3 mr-1" />
+                                  <ChevronUp className="h-3.5 w-3.5 mr-1.5" />
                                 ) : (
-                                  <ChevronDown className="h-3 w-3 mr-1" />
+                                  <ChevronDown className="h-3.5 w-3.5 mr-1.5" />
                                 )}
                                 Details
                               </Button>
                             </CollapsibleTrigger>
                             <Button
                               size="sm"
-                              className="h-7 gap-1 text-xs"
+                              className="h-9 w-full sm:w-auto gap-1.5 text-xs"
                               onClick={() => {
                                 const gen = documentGenerators[doc.filename]
                                 if (gen) gen()
                               }}
                             >
-                              <Download className="h-3 w-3" />
+                              <Download className="h-3.5 w-3.5" />
                               Download Template
                             </Button>
                           </div>

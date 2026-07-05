@@ -385,3 +385,38 @@ export type DocumentCategory = {
     countries: string;
   }[];
 };
+
+export interface GovernmentService {
+  id: string;
+  name: string;
+  shortName?: string;
+  acronym?: string;
+  icon: string;
+  capabilitySummary: string;
+  description: string;
+  trustClassification: 'OFFICIAL' | 'VERIFIED' | 'REGULATORY' | 'EXPORT_BODY' | 'FINANCIAL' | 'CERTIFICATION';
+  category: string;
+  pricing: 'Free' | 'Paid' | 'Application Fee' | 'Transaction Based' | 'Subscription' | 'Government Fee' | 'Contact for Pricing';
+  ownership: 'GOVT.' | 'PRIVATE' | 'ASSOCIATION' | 'INTERNATIONAL' | 'BANK' | 'REGULATOR' | 'EPC' | 'PSU';
+  officialWebsite: string;
+  internalDetailsRoute: string;
+  contactInfo?: {
+    phone?: string;
+    email?: string;
+    headOffice?: string;
+    whatsapp?: string;
+  };
+  expertise?: string[];
+  services?: string[];
+  verificationStatus: 'verified' | 'pending' | 'unverified';
+  lastVerified: string;
+}
+
+export interface ServiceFilter {
+  category?: string;
+  trustClassification?: string;
+  pricing?: string;
+  ownership?: string;
+  verificationStatus?: string;
+  searchQuery?: string;
+}

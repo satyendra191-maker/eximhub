@@ -8,13 +8,13 @@ export const siteConfig = {
   url: 'https://exporsthub.vercel.app',
   lastVerified: '2026-07-05',
   company: {
-    name: 'EximHub',
-    addr1: 'Export Intelligence Hub',
-    addr2: 'India',
-    phone: '',
-    wa: '',
-    email: '',
-    gstin: '',
+    name: 'Savita Global Interprises',
+    addr1: '302 Parth A, 3/11, Patel Colony',
+    addr2: 'Jamnagar, Gujarat - 361008, India',
+    phone: '+919506943134',
+    wa: '+919506943134',
+    email: 'savitaglobalinterprises@gmail.com',
+    gstin: '24GOMPD3586L1ZF',
     iec: '',
     pan: '',
   } satisfies CompanyInfo,
@@ -25,9 +25,9 @@ export const siteConfig = {
     youtube: '#',
   },
   footer: {
-    email: '',
-    phone: '',
-    address: 'India',
+    email: 'savitaglobalinterprises@gmail.com',
+    phone: '+919506943134',
+    address: '302 Parth A, 3/11, Patel Colony, Jamnagar, Gujarat - 361008',
   },
 }
 

@@ -19,6 +19,7 @@ import { ExportJourney } from '@/components/sections/ExportJourney'
 import { ChecklistSection } from '@/components/sections/ChecklistSection'
 import { DocumentSection } from '@/components/sections/DocumentSection'
 import { ComplianceSection } from '@/components/sections/ComplianceSection'
+import { HSNCodeSearch } from '@/components/sections/HSNCodeSearch'
 import { FAQSection } from '@/components/sections/FAQSection'
 import { StatsSection } from '@/components/sections/StatsSection'
 import { Chatbot } from '@/components/floating/Chatbot'
@@ -51,6 +52,7 @@ export function HomePage() {
         <EPCDirectory />
         <CommodityBoardsSection />
         <ODOPGateway />
+        <HSNCodeSearch />
         <TradeIntelligence />
         <PortalComparison />
         <ExportBanking />

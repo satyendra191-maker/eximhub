@@ -2,30 +2,38 @@ import type { CompanyInfo } from '@/types'
 import { siteConfig } from '@/config/site'
 
 const printStyles = [
-  'body { font-family: Arial, sans-serif; font-size: 12px; color: #111; margin: 0; padding: 20px; }',
-  'h1 { font-size: 18px; text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }',
-  '.subtitle { text-align: center; font-size: 11px; color: #555; margin-bottom: 20px; }',
-  'table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }',
-  'th { background: #1e3a5f; color: #fff; padding: 8px; text-align: left; font-size: 11px; }',
-  'td { padding: 7px 8px; border: 1px solid #d1d5db; vertical-align: top; font-size: 11px; }',
+  '*, *::before, *::after { box-sizing: border-box; }',
+  'body { font-family: Arial, sans-serif; font-size: 12px; color: #111; margin: 0; padding: 16px; }',
+  'h1 { font-size: 16px; text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }',
+  '.subtitle { text-align: center; font-size: 10px; color: #555; margin-bottom: 16px; }',
+  'table { width: 100%; border-collapse: collapse; margin-bottom: 12px; }',
+  'th { background: #1e3a5f; color: #fff; padding: 6px 4px; text-align: left; font-size: 10px; }',
+  'td { padding: 5px 4px; border: 1px solid #d1d5db; vertical-align: top; font-size: 10px; }',
   'tr:nth-child(even) td { background: #f9fafb; }',
-  '.label { font-weight: bold; color: #374151; width: 180px; }',
-  '.section-title { font-size: 13px; font-weight: bold; color: #1e3a5f; border-bottom: 2px solid #1e3a5f; padding-bottom: 4px; margin-top: 16px; margin-bottom: 12px; }',
-  '.header-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }',
-  '.signature { margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }',
-  '.signature div { border-top: 1px solid #333; padding-top: 4px; font-size: 11px; }',
-  '.footer-note { text-align: center; font-size: 10px; color: #888; margin-top: 24px; border-top: 1px solid #ddd; padding-top: 8px; }',
+  '.label { font-weight: bold; color: #374151; width: 140px; }',
+  '.section-title { font-size: 12px; font-weight: bold; color: #1e3a5f; border-bottom: 2px solid #1e3a5f; padding-bottom: 3px; margin-top: 12px; margin-bottom: 8px; }',
+  '.header-grid { display: grid; grid-template-columns: 1fr; gap: 6px; margin-bottom: 12px; }',
+  '.signature { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }',
+  '.signature div { border-top: 1px solid #333; padding-top: 3px; font-size: 10px; }',
+  '.footer-note { text-align: center; font-size: 9px; color: #888; margin-top: 16px; border-top: 1px solid #ddd; padding-top: 6px; }',
+  '@media (min-width: 600px) { .header-grid { grid-template-columns: 1fr 1fr; } padding: 20px; }',
+  '@media (min-width: 600px) { body { padding: 24px; } }',
+  '@media (min-width: 600px) { h1 { font-size: 18px; } }',
+  '@media (min-width: 600px) { th { padding: 8px; font-size: 11px; } td { padding: 7px 8px; font-size: 11px; } .label { width: 180px; } }',
   '@media print { body { padding: 0; } }',
+  'table th:last-child, table td:last-child { word-break: break-word; }',
+  '.contact-bar { text-align: center; font-size: 9px; color: #666; margin-top: 8px; padding-top: 6px; border-top: 1px solid #eee; }',
 ].join('')
 
 function wrapHtml(title: string, body: string): string {
   return [
-    '<!DOCTYPE html><html><head><meta charset="utf-8"><title>',
+    '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>',
     title,
-    '</title><style>',
+    ' - Savita Global Interprises</title><style>',
     printStyles,
     '</style></head><body>',
     body,
+    '<div class="contact-bar">Savita Global Interprises | 302 Parth A, 3/11, Patel Colony, Jamnagar, Gujarat - 361008 | GST: 24GOMPD3586L1ZF | Tel: +919506943134</div>',
     '</body></html>',
   ].join('')
 }
