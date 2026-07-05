@@ -4,7 +4,7 @@ import { Lightbulb, Mail } from 'lucide-react'
 
 export function SuggestResource() {
   return (
-    <section className="py-12 md:py-16 bg-muted/30 border-y border-border/50">
+    <section id="suggest" className="scroll-mt-20 py-12 md:py-16 bg-muted/30 border-y border-border/50">
       <div className="exim-container">
         <div className="mx-auto max-w-2xl text-center">
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 mb-5">

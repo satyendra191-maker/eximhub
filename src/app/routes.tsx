@@ -4,6 +4,8 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { QuickAccessToolkit } from '@/components/sections/QuickAccessToolkit'
+import { WhyEximHub } from '@/components/sections/WhyEximHub'
+import { ResourcePreview } from '@/components/sections/ResourcePreview'
 import { SuggestResource } from '@/components/sections/SuggestResource'
 import { PortalSection } from '@/components/sections/PortalSection'
 import { EPCDirectory } from '@/components/sections/EPCDirectory'
@@ -49,6 +51,8 @@ export function HomePage() {
       <main id="main-content" className="flex-1">
         <HeroSection />
         <QuickAccessToolkit />
+        <WhyEximHub />
+        <ResourcePreview />
         <SuggestResource />
         <PortalSection />
         <EPCDirectory />
