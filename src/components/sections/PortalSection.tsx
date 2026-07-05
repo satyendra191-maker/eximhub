@@ -18,7 +18,7 @@ import { Card, CardContent, CardTitle } from '@/components/ui/card'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
 import { portals, portalCategories, categoryFilterStyles, portalGradients, stageBadgeColors, costBadgeColors } from '@/config/portals'
 import { cn } from '@/lib/utils'
-import type { PortalCategory } from '@/types'
+import type { PortalCategory, PortalColor } from '@/types'
 
 const iconMap: Record<string, string> = {
   FileText: '📄',
@@ -133,7 +133,7 @@ export function PortalSection() {
                     <div
                       className={cn(
                         'flex items-center gap-3 bg-gradient-to-r p-4 text-white',
-                        portalGradients[portal.color],
+                        portalGradients[portal.color as PortalColor],
                       )}
                     >
                       <span className="text-2xl">{iconMap[portal.icon] ?? '🔗'}</span>
