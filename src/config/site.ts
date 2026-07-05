@@ -15,8 +15,8 @@ export const siteConfig = {
     wa: '+919506943134',
     email: 'savitaglobalinterprises@gmail.com',
     gstin: '24GOMPD3586L1ZF',
-    iec: '',
-    pan: '',
+    iec: 'GOMPD3586L',
+    pan: 'GOMPD3586L',
   } satisfies CompanyInfo,
   social: {
     twitter: '#',

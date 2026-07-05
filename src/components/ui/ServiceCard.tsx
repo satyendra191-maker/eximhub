@@ -58,6 +58,8 @@ const iconMap: Record<string, string> = {
   TrendingUp: '📈',
   Package: '📦',
   Layers: '📦',
+  Shield: '🛡️',
+  SearchCheck: '🔎',
 };
 
 export interface ServiceCardProps {

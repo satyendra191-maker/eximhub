@@ -13,6 +13,7 @@ import {
   Truck,
   Package,
   ShieldCheck,
+  SearchCheck,
   ClipboardCheck,
   Search
 } from 'lucide-react'
@@ -39,14 +40,15 @@ const quickAccessItems: QuickAccessItem[] = [
   { id: 'shipping-lines', title: 'Shipping Lines', description: 'Book container shipping and track cargo', icon: 'Ship', href: '#shipping', category: 'shipping' },
   { id: 'find-transporter', title: 'Find Transporter', description: 'Hire logistics and transport providers', icon: 'Truck', href: '#transporters', category: 'logistics' },
   { id: 'find-packaging', title: 'Packaging Services', description: 'Get export-grade packaging solutions', icon: 'Package', href: '#packaging', category: 'packaging' },
-  { id: 'export-insurance', title: 'Export Insurance', description: 'Insure shipments with ECGC coverage', icon: 'ShieldCheck', href: '#compliance', category: 'insurance' },
+  { id: 'export-insurance', title: 'Export Insurance', description: 'ECGC credit insurance & risk cover', icon: 'ShieldCheck', href: '#portals', category: 'insurance' },
+  { id: 'buyer-credibility', title: 'Buyer Credibility', description: 'Check buyer creditworthiness before shipping', icon: 'SearchCheck', href: '#portals', category: 'insurance' },
   { id: 'compliance', title: 'Certification & Compliance', description: 'Meet quality standards and regulations', icon: 'ClipboardCheck', href: '#compliance', category: 'compliance' },
   { id: 'faq', title: 'Export FAQ', description: 'Answers to common export questions', icon: 'Search', href: '#faq', category: 'learning' },
 ]
 
 const iconMap: Record<string, ElementType> = {
   Rocket, FileCheck, Shield, Globe, BarChart3, MapPin,
-  Landmark, Building2, Ship, Truck, Package, ShieldCheck,
+  Landmark, Building2, Ship, Truck, Package, ShieldCheck, SearchCheck,
   ClipboardCheck, Search
 }
 

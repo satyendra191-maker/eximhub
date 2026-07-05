@@ -31,6 +31,8 @@ const iconMap: Record<string, string> = {
   TrendingUp: '📈',
   Package: '📦',
   Layers: '📦',
+  Shield: '🛡️',
+  SearchCheck: '🔎',
 }
 
 export function PortalSection() {

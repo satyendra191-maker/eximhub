@@ -75,7 +75,9 @@ export function HeroSection() {
               { label: 'Trade Data', color: 'exim-trade' },
               { label: 'Shipping', color: 'exim-shipping' },
               { label: 'Compliance', color: 'exim-compliance' },
-              { label: 'HS Code', color: 'exim-customs' }
+              { label: 'HS Code', color: 'exim-customs' },
+              { label: 'ECGC Insurance', color: 'exim-insurance' },
+              { label: 'Buyer Credibility', color: 'exim-bank' }
             ].map((chip, i) => (
               <motion.div
                 key={chip.label}
@@ -107,6 +109,7 @@ export function HeroSection() {
               { icon: '🚚', title: 'Transporters', desc: 'Logistics providers', color: 'exim-logistics' },
               { icon: '📦', title: 'Packaging', desc: 'Export solutions', color: 'exim-packaging' },
               { icon: '🛡️', title: 'Export Insurance', desc: 'ECGC coverage', color: 'exim-insurance' },
+              { icon: '🔎', title: 'Buyer Credibility', desc: 'Check buyer credit', color: 'exim-bank' },
               { icon: '✅', title: 'Compliance', desc: 'Certification', color: 'exim-compliance' },
               { icon: '🔢', title: 'HS Code Search', desc: 'Find HSN classification', color: 'exim-customs' },
               { icon: 'ℹ️', title: 'Export FAQ', desc: 'Answers to questions', color: 'exim-learning' }
